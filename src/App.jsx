@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import FeaturedCategories from "./components/FeaturedCategories/FeaturedCategories";
 import Footer from "./components/Footer/Footer";
 import ProductSection from "./components/product/Productsection";
+import About from  "./components/about/About";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       {/* <Home/> */}
       <FeaturedCategories/>
       <ProductSection/>
+        <About/>
       <ProductCategories/>
       <ContactUs/>
       <Footer/>

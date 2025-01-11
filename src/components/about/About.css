@@ -1,0 +1,81 @@
+
+.about-section {
+    background-color: #1a1a1a; /* Matches your navbar color theme */
+    color: #fff; /* White text for better contrast */
+    padding: 60px 20px;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Matches the theme's yellow color */
+  }
+  
+  .about-description,
+  .about-mission,
+  .about-vision {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .about-highlights {
+    margin: 20px 0;
+  }
+  
+  .about-highlights h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e74c3c; /* Red for emphasis */
+  }
+  
+  .about-highlights ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-highlights li {
+    font-size: 1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .about-cta {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #00ff00; /* Green for a call-to-action effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description,
+    .about-mission,
+    .about-vision,
+    .about-cta {
+      font-size: 1rem;
+    }
+  
+    .about-highlights h3 {
+      font-size: 1.5rem;
+    }
+  
+    .about-highlights li {
+      font-size: 0.9rem;
+    }
+  }
+  
