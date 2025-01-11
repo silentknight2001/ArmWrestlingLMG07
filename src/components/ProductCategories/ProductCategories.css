@@ -1,0 +1,28 @@
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .categories-section {
+    margin-right: 20px;
+  }
+  
+  .categories-section h3 {
+    font-size: 18px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+  }
+  
+  .categories-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories-section ul li {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
