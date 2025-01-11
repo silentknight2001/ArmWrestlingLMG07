@@ -13,8 +13,8 @@ const ContactUs = () => {
       <p>
         <strong>Enquiry / Sales:</strong> 9954836594 <br />
         <strong>Working hours:</strong> Mon to Sat – 10am to 7pm<br />
-        <strong>Customer Service Email:</strong> care@bullrockfitness.com<br />
-        <strong>Product Enquiry:</strong> sales@bullrockfitness.com
+        <strong>Customer Service Email:</strong> interlmgarmwrestlingstore@gmail.com <br/>
+        <strong>Product Enquiry:</strong>  interlmgarmwrestlingstore@gmail.com
       </p>
     </div>
   );

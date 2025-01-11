@@ -1,0 +1,49 @@
+.footer {
+    background-color: black; /* Black background */
+    color: white; /* Text color */
+    text-align: center; /* Center-align all text */
+    padding: 20px 40px; /* Padding for spacing */
+    font-family: Arial, sans-serif; /* Clean font */
+  }
+  
+  .footer-disclaimer {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-design {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-link {
+    color: blue; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+  }
+  
+  .footer-nav-link {
+    color: yellow; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .footer-nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
