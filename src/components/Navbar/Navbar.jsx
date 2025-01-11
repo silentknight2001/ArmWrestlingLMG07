@@ -7,7 +7,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       {/* Left Side */}
-      <div className="navbar-logo"> InterLMGArmWrestling 💪🆚💪 </div>
+      <div className="navbar-logo">
+  Inter <span style={{ color: "red" }}>LMG</span> ArmWrestling 💪🆚💪
+</div>
+
       {/* Center Section - Search */}
       <div className="navbar-search">
         <input

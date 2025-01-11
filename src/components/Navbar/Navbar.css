@@ -1,22 +1,26 @@
+/* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a; /* Keep navbar black */
     padding: 35px 40px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .navbar-logo {
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: bold;
-    color: #f1c40f; 
+    color: #f1c40f;
     display: flex;
     align-items: center;
 }
+
 .navbar-links {
     display: flex;
-    gap: 40px; 
+    gap: 40px;
 }
+
 .navbar-links a {
     text-decoration: none;
     color: white;
@@ -26,10 +30,60 @@
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .navbar-links a:hover {
     background-color: #f1c40f;
     color: black;
 }
+
+/* Search Section */
+.navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #f1c40f;
+    border-radius: 20px; /* Rounded corners for the input box */
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 10px rgba(241, 196, 15, 0.8);
+}
+
+.search-button {
+    background-color: #f1c40f;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button span {
+    font-size: 24px; /* Make the arm emoji larger */
+}
+
+.search-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+.search-button:active {
+    transform: scale(0.95);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
@@ -48,5 +102,17 @@
     .navbar-links a {
         text-align: center;
         width: 100%;
+    }
+    .navbar-search {
+        width: 100%;
+        gap: 5px;
+    }
+    .search-input {
+        flex-grow: 1;
+        width: 100%;
+    }
+    .search-button {
+        width: auto;
+        padding: 10px;
     }
 }
