@@ -21,7 +21,7 @@ const Slider = () => {
     <div className="carousel">
      <div className="carousel-image">
         <img src={slider_data[currentIndex]} alt={`Slide ${currentIndex + 1}`} 
-        style={{ width: "100%", height: "796px", objectFit: "cover" }}
+        // style={{ width: "100%", height: "796px", objectFit: "cover" }}
         />
      </div>
     </div>

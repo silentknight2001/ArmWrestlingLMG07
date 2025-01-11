@@ -12,7 +12,7 @@ function App() {
   
       <Navbar/>
       <Slider/>
-      <Home/>
+      {/* <Home/> */}
       <FeaturedCategories/>
       <ProductCategories/>
       <ContactUs/>
