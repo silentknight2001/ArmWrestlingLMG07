@@ -1,0 +1,18 @@
+.contact-us {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .contact-us h3 {
+    font-size: 18px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us p {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
