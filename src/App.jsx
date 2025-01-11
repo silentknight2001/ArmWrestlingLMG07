@@ -14,7 +14,7 @@ function App() {
   
       <Navbar/>
       <Slider/>
-      <Home/>
+      {/* <Home/> */}
       <FeaturedCategories/>
       <ProductSection/>
       <ProductCategories/>
