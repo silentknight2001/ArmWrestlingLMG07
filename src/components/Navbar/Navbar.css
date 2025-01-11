@@ -85,34 +85,36 @@
 }
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align all items */
+        padding: 10px 20px; /* Adjust padding for smaller viewports */
     }
     .navbar-logo {
-        font-size: 25px;
-        margin-bottom: 10px;
+        font-size: 25px; /* Adjust font size for better visibility */
+        margin: 25px 0; /* Add space above and below the logo */
+        text-align: center; /* Center-align the text */
     }
     .navbar-links {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Add spacing between links */
     }
     .navbar-links a {
-        text-align: center;
-        width: 100%;
+        text-align: center; /* Center-align links */
+        width: 100%; /* Make links take full width */
     }
     .navbar-search {
-        width: 100%;
-        gap: 5px;
+        width: 85%; /* Ensure the search section fits the viewport */
+        gap: 5px; /* Adjust spacing between input and button */
     }
     .search-input {
-        flex-grow: 1;
-        width: 100%;
+        flex-grow: 1; /* Allow the input to take available space */
+        width: 80%; /* Ensure the input box spans the full width */
     }
     .search-button {
-        width: auto;
-        padding: 10px;
+        width: auto; /* Keep the button size proportional */
+        padding: 6px; /* Adjust padding for smaller viewports */
     }
 }
