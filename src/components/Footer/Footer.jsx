@@ -23,8 +23,8 @@ const Footer = () => {
       </p>
       <nav className="footer-nav">
         <a href="#home" className="footer-nav-link">Home</a>
-        <a href="#business-deal" className="footer-nav-link">Business Deal</a>
-        <a href="#team" className="footer-nav-link">Team Ibner7</a>
+        <a href="#products" className="footer-nav-link">Products</a>
+        <a href="#about" className="footer-nav-link">About</a>
         <a href="#contact" className="footer-nav-link">Contact</a>
       </nav>
     </footer>

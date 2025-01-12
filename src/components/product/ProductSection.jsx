@@ -57,8 +57,12 @@ const ProductSection = () => {
       </div>
       <h2 className="section-title">Products</h2>
       <div className="product-grid">
+
+
         {products.map((product) => (
           <div key={product.id} className="product-card">
+
+            
             <div className="product-image">
               <img src={product.image} alt={product.name} />
               {product.discount && <span className="product-discount">{product.discount}</span>}

@@ -12,7 +12,7 @@ const FeaturedCategories = () => {
   ];
 
   return (
-    <section className="featured-categories">
+    <section className="featured-categories" id="products"                 >
       <h2>Featured Categories</h2>
       <div className="categories-container">
         {categories.map((category) => (

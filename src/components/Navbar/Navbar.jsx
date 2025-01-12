@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar"  id="home"   >
       {/* Left Side */}
       <div className="navbar-logo">
   Inter <span style={{ color: "red" }}>LMG</span> ArmWrestling 💪🆚💪

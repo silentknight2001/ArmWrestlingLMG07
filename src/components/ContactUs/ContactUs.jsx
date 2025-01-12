@@ -3,7 +3,7 @@ import "./ContactUs.css";
 
 const ContactUs = () => {
   return (
-    <div className="contact-us">
+    <div className="contact-us"  id="contact"   >
       <h3>CONTACT US</h3>
       <p><strong>Address</strong></p>
       <p>  InterLMGArmWrestling <br />
@@ -12,7 +12,7 @@ const ContactUs = () => {
       <p>For consultation and bulk orders, contact us at:</p>
       <p>
         <strong>Enquiry / Sales:</strong> 9954836594 <br />
-        <strong>Working hours:</strong> Mon to Sat – 10am to 7pm<br />
+       
         <strong>Customer Service Email:</strong> interlmgarmwrestlingstore@gmail.com <br/>
         <strong>Product Enquiry:</strong>  interlmgarmwrestlingstore@gmail.com
       </p>
