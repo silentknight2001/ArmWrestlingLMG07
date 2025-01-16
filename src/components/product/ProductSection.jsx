@@ -3,9 +3,9 @@ import img1 from "../../assets/img/img_1.jpeg"
 import img2 from "../../assets/img/img_2.jpeg"
 import img3 from "../../assets/img/img_3.jpeg"
 import img4 from "../../assets/img/img_4.jpeg"
-
-
 import "./ProductSection.css";
+import dotenv from 'dotenv';
+
 
 const products = [
   {
@@ -55,6 +55,13 @@ const products = [
 ];
 
 const ProductSection = () => {
+  const sendWhatapp = () => {
+    const phoneNumber = import.meta.env.VITE_WHATSAPP;
+    const message = `*Product Details*\n\n*Name:* ${products.name}\n*Price:* ${products.price}\n*Original Price:* ${products.originalPrice}\n*GST Price:* ${products.gstPrice}\n*In Stock:* ${products.stock ? "Yes" : "No"
+      }\n\n*Image URL:* ${window.location.origin}/${products.image}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+  }
   return (
     <section className="product-section">
       <div className="breadcrumb">
@@ -62,12 +69,8 @@ const ProductSection = () => {
       </div>
       <h2 className="section-title">Products</h2>
       <div className="product-grid">
-
-
         {products.map((product) => (
           <div key={product.id} className="product-card">
-
-            
             <div className="product-image">
               <img src={product.image} alt={product.name} />
               {product.discount && <span className="product-discount">{product.discount}</span>}
@@ -83,7 +86,7 @@ const ProductSection = () => {
               <div className={`stock-status ${product.stock ? "in-stock" : "out-of-stock"}`}>
                 {product.stock ? "✔ In stock" : "✖ Out of stock"}
               </div>
-              <button className="add-to-basket">ADD TO BASKET</button>
+              <button className="add-to-basket" onClick={()=> sendWhatapp(products)}>Purchase now</button>
             </div>
           </div>
         ))}
