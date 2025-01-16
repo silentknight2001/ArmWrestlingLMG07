@@ -1,5 +1,10 @@
-
 import React from "react";
+import img1 from "../../assets/img/img_1.jpeg"
+import img2 from "../../assets/img/img_2.jpeg"
+import img3 from "../../assets/img/img_3.jpeg"
+import img4 from "../../assets/img/img_4.jpeg"
+
+
 import "./ProductSection.css";
 
 const products = [
@@ -12,7 +17,7 @@ const products = [
     stock: true,
     discount: "-25%",
     isNew: true,
-    image: "image1_url", // Replace with actual image URLs
+    image: img1, // Replace with actual image URLs
   },
   {
     id: 2,
@@ -23,7 +28,7 @@ const products = [
     stock: true,
     discount: null,
     isNew: false,
-    image: "image2_url",
+    image: img2,
   },
   {
     id: 3,
@@ -34,7 +39,7 @@ const products = [
     stock: true,
     discount: "-30%",
     isNew: true,
-    image: "image3_url",
+    image: img3,
   },
   {
     id: 4,
@@ -45,7 +50,7 @@ const products = [
     stock: true,
     discount: "-30%",
     isNew: false,
-    image: "image4_url",
+    image: img4,
   },
 ];
 
