@@ -57,7 +57,7 @@ const products = [
 const ProductSection = () => {
 
   const sendWhatapp = (products) => {
- c8bcd2bd1b354a5ffa1b376bc7a3a34efdcba2d5
+ 
     const phoneNumber = import.meta.env.VITE_WHATSAPP;
     const message = `*Product Details*\n\n*Name:* ${products.name}\n*Price:* ${products.price}\n*Original Price:* ${products.originalPrice}\n*GST Price:* ${products.gstPrice}\n*In Stock:* ${products.stock ? "Yes" : "No"
       }\n\n*Image URL:* ${window.location.origin}/${products.image}`;
