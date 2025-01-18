@@ -55,13 +55,21 @@ const products = [
 ];
 
 const ProductSection = () => {
+
   const sendWhatapp = (product) => {
+
+
+ 
+ 
+
     const phoneNumber = import.meta.env.VITE_WHATSAPP;
     const message = `*Product Details*\n\n*Name:* ${product.name}\n*Price:* ${product.price}\n*Original Price:* ${product.originalPrice}\n*GST Price:* ${product.gstPrice}\n*In Stock:* ${product.stock ? "Yes" : "No"
       }\n\n*Image URL:* ${window.location.origin}/${product.image}`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   }
+
+ 
   return (
     <section className="product-section">
       <div className="breadcrumb">
@@ -86,6 +94,7 @@ const ProductSection = () => {
               <div className={`stock-status ${product.stock ? "in-stock" : "out-of-stock"}`}>
                 {product.stock ? "✔ In stock" : "✖ Out of stock"}
               </div>
+
               <button className="add-to-basket" onClick={()=> sendWhatapp(product)}>Purchase now</button>
             </div>
           </div>
@@ -96,3 +105,4 @@ const ProductSection = () => {
 };
 
 export default ProductSection;
+
