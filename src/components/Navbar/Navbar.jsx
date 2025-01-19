@@ -30,6 +30,7 @@ function Navbar() {
         <a href="#contact">Contact</a>
       </div>
     </nav>
+          
   );
 }
 

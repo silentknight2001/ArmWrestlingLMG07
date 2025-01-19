@@ -6,7 +6,6 @@ import img4 from "./img/img_4.jpeg";
 
 const slider_data = [
     open_Arms,
-   
     Arm_group,
     img2,
     img3,
