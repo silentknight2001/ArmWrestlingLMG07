@@ -1,8 +1,8 @@
 import React from "react";
 import img1 from "../../assets/img/img_1.jpeg"
-import img2 from "../../assets/img/img_2.jpeg"
-import img3 from "../../assets/img/img_3.jpeg"
-import img4 from "../../assets/img/img_4.jpeg"
+import img2 from "../../assets/img/Arm_Tshirt.jpeg"
+import img3 from "../../assets/img/Arm_sleeves.jpeg"
+import img4 from "../../assets/img/Arm_sweeters.jpeg"
 import "./ProductSection.css";
 import dotenv from 'dotenv';
 
@@ -11,20 +11,14 @@ const products = [
   {
     id: 1,
     name: "Adjustable Bench – FID3 – With Removable Foot Catch",
-    price: "₹27,990",
-    originalPrice: "₹37,319",
-    gstPrice: "₹23,720",
-    stock: true,
-    discount: "-25%",
-    isNew: true,
+    Mode : "Rental system",
+    stock : false,
     image: img1, // Replace with actual image URLs
   },
   {
     id: 2,
-    name: "Wheel Set for Vertical Plate Tree L72",
-    price: "₹4,248",
-    originalPrice: "₹4,248",
-    gstPrice: "₹3,600",
+    name: "Arm wrestling T-shirt",
+    price: "₹500",
     stock: true,
     discount: null,
     isNew: false,
@@ -32,18 +26,17 @@ const products = [
   },
   {
     id: 3,
-    name: "Adjustable Aluminium Jump Rope – Contour Handle",
-    price: "₹810",
-    originalPrice: "₹1,157",
-    gstPrice: "₹686",
-    stock: true,
-    discount: "-30%",
+    name: "Arm-wrestling Sleeves",
+    price: "₹840",
+    originalPrice: "1200",
+    discount : "-30%",
+    stock : true,
     isNew: true,
     image: img3,
   },
   {
     id: 4,
-    name: "Adjustable Aluminium Jump Rope – Self Lock – Silver",
+    name: "Inter-LMG Arm-wrestling Sweeters",
     price: "₹960",
     originalPrice: "₹1,374",
     gstPrice: "₹814",
@@ -58,8 +51,6 @@ const ProductSection = () => {
 
   const sendWhatapp = (product) => {
 
-
- 
  
 
     const phoneNumber = import.meta.env.VITE_WHATSAPP;
@@ -96,6 +87,7 @@ const ProductSection = () => {
               </div>
 
               <button className="add-to-basket" onClick={()=> sendWhatapp(product)}>Purchase now</button>
+
             </div>
           </div>
         ))}
