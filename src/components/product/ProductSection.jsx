@@ -48,11 +48,7 @@ const products = [
 ];
 
 const ProductSection = () => {
-
   const sendWhatapp = (product) => {
-
- 
-
     const phoneNumber = import.meta.env.VITE_WHATSAPP;
     const message = `*Product Details*\n\n*Name:* ${product.name}\n*Price:* ${product.price}\n*Original Price:* ${product.originalPrice}\n*GST Price:* ${product.gstPrice}\n*In Stock:* ${product.stock ? "Yes" : "No"
       }\n\n*Image URL:* ${window.location.origin}/${product.image}`;
@@ -60,7 +56,6 @@ const ProductSection = () => {
     window.open(whatsappUrl, "_blank");
   }
 
- 
   return (
     <section className="product-section">
       <div className="breadcrumb">
@@ -97,4 +92,3 @@ const ProductSection = () => {
 };
 
 export default ProductSection;
-
